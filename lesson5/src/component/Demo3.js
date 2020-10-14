@@ -16,11 +16,7 @@ class Demo3 extends React.Component {
         const responseJSON = await response.json(); // Turn the data into a JSON object that we can use
         
         // This should seem familiar
-        const responsePokemon = responseJSON.results.map((item) => 
-            {
-                return <li>{item.name}: Find more at {item.url}</li>;
-            }
-        );
+        const responsePokemon = responseJSON.results.map((item) => <li>{item.name}: Find more at {item.url}</li>);
         
         // This should also seem familiar
         this.setState(
@@ -30,14 +26,15 @@ class Demo3 extends React.Component {
         );
     }
 
+    // Only use an API once after the page loads
+    componentDidMount() {
+         // Start getting the API data from PokeAPI
+         this.getAPIData();
+    }
+
     render () {
         // Type your code here...
-
-        // Start getting the API data from PokeAPI
-        this.getAPIData();
-
-        // In the meantime, setup the rest of the page
-        //      Remember, getAPIData() will work in the background
+        
         const someJSX = <ul>{this.state.pokemon}</ul>;
 
         // Return some JSX here...
