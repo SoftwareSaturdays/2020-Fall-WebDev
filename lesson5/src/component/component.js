@@ -16,5 +16,4 @@ class /*FILENAME*/ extends React.Component {
     }
 }
 
-
 export default /*FILENAME*/;
