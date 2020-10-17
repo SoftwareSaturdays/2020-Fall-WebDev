@@ -11,6 +11,9 @@ If you want to use the sample code starting from lesson 3 or later, please follo
 3. Type `npm install` to install all the necessary files onto your computer
 4. Type `npm start` to run the code, follow instructions in the terminal about how to view the web page in your browser
 
+# Final Project
+The code in this repository is the starter code for the final project. Please download and modify it to meet the requirements. If you have any questions, please ask us on Slack!
+
 # Contact
 If you have any questions, please go to our website for more information:
 https://purdueieee.org/software/
